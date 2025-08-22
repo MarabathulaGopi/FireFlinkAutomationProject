@@ -1,0 +1,37 @@
+package ninzaCRM.ObjectRepository;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LeadsPage {
+	
+	//@FindBy - Identify the web elements
+	
+	@FindBy(xpath = "//select[@class='form-control']") private WebElement leadsDropDown;
+	@FindBy(xpath = "//input[@placeholder='Search by Lead Id']") private WebElement leadsIdTF;
+	@FindBy(xpath = "//span[.='Create Lead']") private WebElement createLeadBtn;
+	
+		
+	//Create a Constructor
+	public LeadsPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+
+
+	public WebElement getLeadsDropDown() {
+		return leadsDropDown;
+	}
+	public WebElement getLeadsIdTF() {
+		return leadsIdTF;
+	}
+
+	public WebElement getCreateLeadBtn() {
+		return createLeadBtn;
+	}
+	
+	
+
+}
