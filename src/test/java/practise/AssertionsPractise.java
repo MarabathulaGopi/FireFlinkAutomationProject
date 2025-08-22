@@ -17,7 +17,7 @@ public class AssertionsPractise {
 		
 		Assert.assertEquals(0, 1);
 		
-		////////////System.out.println("Step 5");
+		System.out.println("Step 5");
 	}
 
 }
