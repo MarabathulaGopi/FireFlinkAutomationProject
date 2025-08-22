@@ -26,7 +26,7 @@ public class TestNGPractise {
 	@Test()
 	public void delete()
 	{
-		System.out.println("delete");
+		System.out.println("delete1");
 	}
 	
 	@DataProvider
