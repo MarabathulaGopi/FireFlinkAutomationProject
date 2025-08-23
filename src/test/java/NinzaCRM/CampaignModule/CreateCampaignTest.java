@@ -37,10 +37,5 @@ public class CreateCampaignTest extends BaseClass {
 
 	}
 	
-	@Test
-	public void sample()
-	{
-		System.out.println("sample");
-	}
 
 }

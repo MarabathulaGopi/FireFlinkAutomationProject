@@ -17,6 +17,9 @@ import org.testng.annotations.Parameters;
 
 import com.beust.jcommander.Parameter;
 
+import ninzaCRM.ObjectRepository.DashboardPage;
+import ninzaCRM.ObjectRepository.LoginPage;
+
 
 
 /**
@@ -73,7 +76,8 @@ public class BaseClass {
 		 String USERNAME =fileu.readDataFromPropertyFile("username");
 	     String PASSWORD=fileu.readDataFromPropertyFile("password");
 	     
-	     
+	     LoginPage lp=new LoginPage(driver);
+	     lp.loginToApp(USERNAME, PASSWORD);
 	     System.out.println("-----------lOGIN INTO APP----------------");
 	}
 	
@@ -81,8 +85,10 @@ public class BaseClass {
 	public void amConfig() throws InterruptedException
 	{
 		Thread.sleep(5000);
+		DashboardPage dp=new DashboardPage(driver);
+		dp.clickOnLogout();
 		
-		 System.out.println("-----------lOGOUT INTO APP----------------");
+		System.out.println("-----------lOGOUT INTO APP----------------");
 	}
 	
 	
