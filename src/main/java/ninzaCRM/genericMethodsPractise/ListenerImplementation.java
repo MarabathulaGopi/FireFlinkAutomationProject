@@ -18,11 +18,11 @@ public class ListenerImplementation implements ITestListener,ITestNGListener {
 	ExtentReports report;
 	ExtentTest test ;
 
-	@Override
-	public boolean isEnabled() {
-		// TODO Auto-generated method stub
-		return ITestListener.super.isEnabled();
-	}
+//	@Override
+//	public boolean isEnabled() {
+//		// TODO Auto-generated method stub
+//		return ITestListener.super.isEnabled();
+//	}
 
 	@Override
 	public void onTestStart(ITestResult result) {
