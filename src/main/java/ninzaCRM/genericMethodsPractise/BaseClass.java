@@ -85,6 +85,7 @@ public class BaseClass {
 	public void amConfig() throws InterruptedException
 	{
 		Thread.sleep(5000);
+		
 		DashboardPage dp=new DashboardPage(driver);
 		dp.clickOnLogout();
 		
