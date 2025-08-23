@@ -32,10 +32,8 @@ public class TestNGPractise {
 	@DataProvider
 	public Object[][] demo() throws EncryptedDocumentException, IOException
 	{
-		FileUtility futil=new FileUtility();
-		
-		return  futil.readMutlipleDataFromExcel("Sheet2");
-		
+		FileUtility futil=new FileUtility();	
+		return  futil.readMutlipleDataFromExcel("Sheet2");	
 	}
 
 	
