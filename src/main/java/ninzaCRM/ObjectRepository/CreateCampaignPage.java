@@ -8,10 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class CreateCampaignPage {
 	
 	
-	
-	
-	//@FindBy - Identify the web elements
-		
+	//@FindBy - Identify the web elements	
 	@FindBy(name = "campaignName") private WebElement campaignNameTF;
 	@FindBy(name = "expectedCloseDate") private WebElement expectedCloseDateTF;
 	@FindBy(name = "targetAudience") private WebElement targetAudienceTF;
@@ -60,15 +57,9 @@ public class CreateCampaignPage {
 	}
 
 
-
-
-
 	public WebElement getDescriptionTF() {
 		return descriptionTF;
 	}
-
-
-
 
 
 	public WebElement getTargetSizeTF() {
